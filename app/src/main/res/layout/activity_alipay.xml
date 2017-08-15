@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_alipay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cnbs.utilslibrarydemo.play.AlipayActivity">
+
+    <Button
+        android:id="@+id/ali_pay"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/choose_login_selector"
+        android:gravity="center"
+        android:text="支付宝支付"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_clock"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cnbs.utilslibrarydemo.clock.ClockActivity">
+
+    <include layout="@layout/header_view" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/exam_activity_vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/exam_activity_bottom"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/blue_light" />
+
+        <ImageView
+            android:id="@+id/exam_activity_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@mipmap/select_2x" />
+
+        <Button
+            android:id="@+id/exam_activity_submit"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/choose_login_selector"
+            android:text="提交"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/BigTextSize16" />
+
+        <TextView
+            android:id="@+id/exam_activity_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/zhong_2x"
+            android:drawablePadding="5dp"
+            android:paddingRight="45dp"
+            android:text="20:35"
+            android:textColor="@color/base_text_color"
+            android:textSize="@dimen/SecTextSize14" />
+    </RelativeLayout>
+
+</LinearLayout>

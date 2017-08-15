@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cnbs.utilslibrarydemo">
+
+    <!-- 相机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 振动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/utils_app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.cnbs.utilslibrarydemo.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".camera.CameraActivity" />
+        <activity android:name=".clock.ClockActivity" />
+
+        <!-- 支付宝支付- begin -->
+
+
+        <!-- 支付宝支付- end -->
+
+
+        <!-- 微信支付 -->
+        <activity
+            android:name=".play.WXPayActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 这里要注意，这个和WeiXin配置类中的APP_ID要一致 -->
+                <data android:scheme="wx51a63dc4c2571961" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".play.AlipayActivity" />
+
+        <!-- 视频播放 -->
+        <activity
+            android:name=".video.VideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".QRcode.CreatQRImageActivity" />
+        <activity android:name=".calendar.ZCalendarActivity" />
+        <activity android:name=".calendar.AddRemarkActivity" />
+        <activity android:name=".utilsUse.UtilsActivity" />
+        <activity android:name=".utilsUse.UtilsExplainActivity"></activity>
+        <activity android:name=".customView.CustomViewActivity"/>
+    </application>
+
+</manifest>

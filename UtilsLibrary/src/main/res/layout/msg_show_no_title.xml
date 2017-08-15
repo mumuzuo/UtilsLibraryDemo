@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+    android:orientation="vertical"
+    android:background="@drawable/message_show_shape"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="5"
+        android:padding="20dp"
+        android:gravity="center"
+        android:text="1.content\n2.content\n3.content"
+        android:textSize="@dimen/SecTextSize14"
+        android:textColor="@color/text_light"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBlue_light"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/left_tv"
+            android:clickable="true"
+            android:layout_marginRight="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="yes"
+            android:textSize="@dimen/BigTextSize16"
+            android:textColor="@color/blue_light"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlue_light"/>
+
+        <TextView
+            android:id="@+id/right_tv"
+            android:clickable="true"
+            android:layout_marginLeft="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="no"
+            android:textSize="@dimen/BigTextSize16"
+            android:textColor="@color/blue_light"/>
+
+    </LinearLayout>
+</LinearLayout>

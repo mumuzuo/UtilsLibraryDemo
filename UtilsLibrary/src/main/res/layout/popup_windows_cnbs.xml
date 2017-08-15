@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/popup_viewpager"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="240dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/load_bg_color"
+        android:layout_above="@+id/practise_act_frag_bottom"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/popup_menu_bottom_arrow"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="13dp"
+            android:src="@mipmap/bottom_arrow_popup"/>
+
+        <LinearLayout
+            android:id="@+id/popup_menu_left"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/popup_menu_left_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:src="@mipmap/last_arrow"/>
+
+                <TextView
+                    android:id="@+id/popup_menu_left_num"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/msg_count_shape"
+                    android:layout_alignRight="@+id/popup_menu_left_iv"
+                    android:maxLength="3"
+                    android:text=""
+                    android:textSize="@dimen/ThiTextSize12"
+                    android:textColor="@color/colorWhite"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/popup_menu_left_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上一题"
+                android:textSize="@dimen/SecTextSize14"
+                android:textColor="@color/base_text_color"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popup_menu_right"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/popup_menu_right_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下一题"
+                android:textSize="@dimen/SecTextSize14"
+                android:textColor="@color/base_text_color"/>
+
+            <ImageView
+                android:id="@+id/popup_menu_right_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@mipmap/next_arrow"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

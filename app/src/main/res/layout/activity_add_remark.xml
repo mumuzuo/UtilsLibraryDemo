@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_remark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.cnbs.utilslibrarydemo.calendar.AddRemarkActivity">
+
+    <RelativeLayout style="@style/activity_title">
+
+        <ImageView
+            android:id="@+id/iv_finish"
+            style="@style/back_title" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_title"
+            android:text="添加记录" />
+
+        <TextView
+            android:id="@+id/tv_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="确认" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/blue_light" />
+
+    <EditText
+        android:id="@+id/input_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="5"
+        android:background="@null"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textColor="@color/base_text_color"
+        android:textColorHint="@color/colorBlue_light"
+        android:hint="输入当天记录"
+        android:textSize="16dp"
+        android:gravity="top"/>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/base_text_color"
+        android:textSize="16sp"
+        android:text=""/>
+
+    <LinearLayout
+        android:id="@+id/header_left_ll"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/header_left_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_back"
+            android:padding="15dp"/>
+
+        <TextView
+            android:id="@+id/header_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/base_text_color"
+            android:textSize="16sp"
+            android:text=""/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/header_right_tv"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:paddingRight="20dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:textColor="@color/base_text_color"
+        android:textSize="16sp"
+        android:text=""/>
+
+    <ImageView
+        android:id="@+id/header_right_iv"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/collect"/>
+
+</RelativeLayout>

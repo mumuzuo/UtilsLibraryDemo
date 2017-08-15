@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义日历控件-->
+    <declare-styleable name="NCalendar">
+        <attr name="solarTextColor" format="color" />
+        <attr name="lunarTextColor" format="color" />
+        <attr name="hintColor" format="color" />
+        <attr name="selectCircleColor" format="color" />
+        <attr name="solarTextSize" format="dimension" />
+        <attr name="lunarTextSize" format="dimension" />
+        <attr name="selectCircleRadius" format="integer" />
+        <attr name="isShowLunar" format="boolean" />
+
+        <attr name="pointSize" format="dimension" />
+        <attr name="pointColor" format="color" />
+        <attr name="hollowCircleColor" format="color" />
+        <attr name="hollowCircleStroke" format="integer" />
+        <attr name="startDateTime" format="string" />
+        <attr name="endDateTime" format="string" />
+
+        <attr name="calendarHeight" format="dimension"/>
+        <attr name="isMultiple" format="boolean"/>
+        <attr name="duration" format="integer"/>
+
+    </declare-styleable>
+
+    <!--环形进度条-->
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidth" format="dimension"/>
+        <attr name="titleTextColor" format="color" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="titleText" format="string" />
+        <attr name="rateTextColor" format="color" />
+        <attr name="rateTextSize" format="dimension" />
+        <attr name="maxProgress" format="integer"/>
+        <attr name="currentProgress" format="integer"/>
+        <attr name="textIsDisplayable" format="boolean"/>
+        <attr name="style">
+            <enum name="STROKE" value="0"/>
+            <enum name="FILL" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!--数字进度条-->
+    <declare-styleable name="NumberProgressBar">
+        <!--进度-->
+        <attr name="progress_current" format="integer"/>
+        <attr name="progress_max" format="integer"/>
+        <!--已下载和未下载的进度条的颜色-->
+        <attr name="progress_unreached_color" format="color"/>
+        <attr name="progress_reached_color" format="color"/>
+        <!--已下载和未下载的进度条的高度-->
+        <attr name="progress_reached_bar_height" format="dimension"/>
+        <attr name="progress_unreached_bar_height" format="dimension"/>
+        <!--显示进度百分比的字体大小和颜色-->
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+        <!--显示进度百分比的字体唯一，就是距左右的距离-->
+        <attr name="progress_text_offset" format="dimension"/>
+        <!--显示进度百分比的字体是否可见-->
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference"/>
+    </declare-styleable>
+</resources>

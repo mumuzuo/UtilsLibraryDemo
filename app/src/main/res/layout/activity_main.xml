@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context="com.cnbs.utilslibrarydemo.MainActivity">
+
+
+        <TextView
+            android:id="@+id/textView00"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/blue_light"
+            android:gravity="center"
+            android:onClick="true"
+            android:text="相机相册(权限检测)"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/BigTextSize16" />
+
+        <TextView
+            android:id="@+id/textView01"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/blue_light"
+            android:gravity="center"
+            android:onClick="true"
+            android:text="计时器"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/BigTextSize16" />
+
+        <TextView
+            android:id="@+id/textView02"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/blue_light"
+            android:gravity="center"
+            android:onClick="true"
+            android:text="支付宝支付"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/BigTextSize16" />
+
+        <TextView
+            android:id="@+id/textView03"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/blue_light"
+            android:gravity="center"
+            android:onClick="true"
+            android:text="微信支付"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/BigTextSize16" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/blue_light"
+            android:gravity="center"
+            android:text="第三方分享"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/BigTextSize16" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/blue_light"
+            android:gravity="center"
+            android:text="第三方登录"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/BigTextSize16" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/blue_light"
+            android:gravity="center"
+            android:text="QR扫描"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/BigTextSize16" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/blue_light"
+            android:gravity="center"
+            android:text="QR生成"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/BigTextSize16" />
+
+        <TextView
+            android:id="@+id/textView04"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/blue_light"
+            android:gravity="center"
+            android:onClick="true"
+            android:text="视频播放"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/BigTextSize16" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/blue_light"
+            android:gravity="center"
+            android:onClick="true"
+            android:text="自定义View"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/BigTextSize16" />
+
+        <TextView
+            android:id="@+id/textView05"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/blue_light"
+            android:gravity="center"
+            android:onClick="true"
+            android:text="自定义日历"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/BigTextSize16" />
+
+        <TextView
+            android:id="@+id/textView06"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/blue_light"
+            android:gravity="center"
+            android:onClick="true"
+            android:text="工具类使用"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/BigTextSize16" />
+
+    </LinearLayout>
+
+</ScrollView>
